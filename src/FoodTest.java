@@ -14,9 +14,9 @@ public class FoodTest {
         int DOT_SIZE = 10;
         Food apple = new Food(new Point(new Random().nextInt(32) * DOT_SIZE + 30,
                 new Random().nextInt(35) * DOT_SIZE + 30),
-                new ImageIcon("apple.jpg").getImage());
+                new ImageIcon("images/apple.jpg").getImage());
         for (int i = 0; i < 1000; i++) {
-            apple = new Food(apple.createApple(), new ImageIcon("apple.jpg").getImage());
+            apple = new Food(apple.createApple(), new ImageIcon("images/apple.jpg").getImage());
             Assert.assertTrue(apple.getAppleCoordinate().x >= 30 && apple.getAppleCoordinate().x <= 350);
             Assert.assertTrue(apple.getAppleCoordinate().y <= 380 && apple.getAppleCoordinate().x >= 30);
         }

@@ -11,8 +11,8 @@ public class Game extends JPanel implements ActionListener{
     private final int DOT_SIZE = 10;
     private Food apple = new Food(new Point(new Random().nextInt(33) * DOT_SIZE + 30,
             new Random().nextInt(35) * DOT_SIZE + 30),
-            new ImageIcon("apple.jpg").getImage());
-    private Snake userSnake = new Snake(new ImageIcon("green.jpg").getImage(), 50, 50, "right");
+            new ImageIcon("images/apple.jpg").getImage());
+    private Snake userSnake = new Snake(new ImageIcon("images/green.jpg").getImage(), 50, 50, "right");
     private int userSnakeScore = 0;
     private int botSnakeScore = 0;
     private String loser;
@@ -20,7 +20,7 @@ public class Game extends JPanel implements ActionListener{
     private JButton startGameButton = new JButton("Начать игру");
     private JButton startOverButton = new JButton("Начать сначала");
     private int counter = 400;
-    private Snake botSnake = new Snake(new ImageIcon("blue.jpg").getImage(), 370, 370, "left");
+    private Snake botSnake = new Snake(new ImageIcon("images/blue.jpg").getImage(), 370, 370, "left");
     private boolean inGame = false;
     private boolean isStart = false;
     private Timer timer = new Timer(250, this);
@@ -39,11 +39,11 @@ public class Game extends JPanel implements ActionListener{
         });
         startOverButton.addActionListener(e -> {
             inGame = true;
-            userSnake = new Snake(new ImageIcon("green.jpg").getImage(), 50, 50, "right");
-            botSnake = new Snake(new ImageIcon("blue.jpg").getImage(), 370, 370, "left");
+            userSnake = new Snake(new ImageIcon("images/green.jpg").getImage(), 50, 50, "right");
+            botSnake = new Snake(new ImageIcon("images/blue.jpg").getImage(), 370, 370, "left");
             apple = new Food(new Point(new Random().nextInt(33) * DOT_SIZE + 30,
                     new Random().nextInt(35) * DOT_SIZE + 30),
-                    new ImageIcon("apple.jpg").getImage());
+                    new ImageIcon("images/apple.jpg").getImage());
             initGame();
             userSnakeScore = 0;
             botSnakeScore = 0;
@@ -99,11 +99,11 @@ public class Game extends JPanel implements ActionListener{
             }
             counter--;
             if (userSnake.checkApple(apple.getAppleCoordinate().x, apple.getAppleCoordinate().y)) {
-                apple = new Food(apple.createApple(), new ImageIcon("apple.jpg").getImage());
+                apple = new Food(apple.createApple(), new ImageIcon("images/apple.jpg").getImage());
                 userSnakeScore++;
             }
             if (botSnake.checkApple(apple.getAppleCoordinate().x, apple.getAppleCoordinate().y)) {
-                apple = new Food(apple.createApple(), new ImageIcon("apple.jpg").getImage());
+                apple = new Food(apple.createApple(), new ImageIcon("images/apple.jpg").getImage());
                 botSnakeScore++;
             }
             inGame = userSnake.checkCollisions() && botSnake.checkTouch(userSnake);

@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f150e1a-0c0e-4a65-8b37-9c1b933a539c" name="Default Changelist" comment="" />
+    <list default="true" id="5f150e1a-0c0e-4a65-8b37-9c1b933a539c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apple.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blue.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/green.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Snake/FoodTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Snake/FoodTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Snake/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Snake/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Snake/Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Snake/Snake.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Snake/SnakeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Snake/SnakeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FoodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FoodTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SnakeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SnakeTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +32,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -28,6 +44,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -55,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SnakeTest">
+  <component name="RunManager" selected="Application.MainWindow">
     <configuration name="MainWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainWindow" />
       <module name="Snake" />
@@ -104,8 +121,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SnakeTest" />
         <item itemvalue="Application.MainWindow" />
+        <item itemvalue="JUnit.SnakeTest" />
         <item itemvalue="JUnit.SnakeTest.checkCollisions" />
         <item itemvalue="JUnit.SnakeTest.checkTouch" />
         <item itemvalue="JUnit.SnakeTest.checkApple" />
@@ -136,5 +153,16 @@
       <updated>1597933986006</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
