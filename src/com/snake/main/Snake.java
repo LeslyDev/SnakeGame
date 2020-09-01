@@ -1,7 +1,9 @@
+package com.snake.main;
+
 import java.awt.*;
 import java.util.stream.IntStream;
 
-class Snake {
+public class Snake {
     private Image dot;
     private int[] x = new int[1600];
     private int[] y = new int[1600];
@@ -9,7 +11,7 @@ class Snake {
     private Point startPosition;
     private String m_direction;
 
-    Snake(Image image, int startX, int startY, String direction) {
+    public Snake(Image image, int startX, int startY, String direction) {
         dot = image;
         startPosition = new Point(startX, startY);
         m_direction = direction;
@@ -27,11 +29,11 @@ class Snake {
         return dots;
     }
 
-    void setX(int[] x) {
+    public void setX(int[] x) {
         this.x = x;
     }
 
-    void setY(int[] y) {
+    public void setY(int[] y) {
         this.y = y;
     }
 
@@ -43,7 +45,7 @@ class Snake {
         return y;
     }
 
-    void setDots(int dots) {
+    public void setDots(int dots) {
         this.dots = dots;
     }
 
@@ -51,7 +53,7 @@ class Snake {
         return dot;
     }
 
-    void initSnake() {
+    public void initSnake() {
         x[0] = startPosition.x;
         y[0] = startPosition.y;
     }
@@ -78,7 +80,7 @@ class Snake {
         }
     }
 
-    String chooseDirection(int appleX, int appleY) {
+    public String chooseDirection(int appleX, int appleY) {
         String direction = null;
         if (x[0] < appleX) {
             direction = "right";
@@ -95,7 +97,7 @@ class Snake {
         return direction;
     }
 
-    boolean checkApple(int appleX, int appleY){
+    public boolean checkApple(int appleX, int appleY){
         if(x[0] == appleX && y[0] == appleY){
             dots++;
             return true;
@@ -103,7 +105,7 @@ class Snake {
         return false;
     }
 
-    boolean checkCollisions() {
+    public boolean checkCollisions() {
         for (int i = getDots() - 1; i >= 0 ; i--) {
             if(i > 3 && x[0] == x[i] && y[0] == y[i]){
                 return false;
@@ -123,7 +125,7 @@ class Snake {
         else return y[0] >= 30;
     }
 
-    boolean checkTouch(Snake this, Snake other) {
+    public boolean checkTouch(Snake this, Snake other) {
         return IntStream.of(this.x).noneMatch(x -> x == other.x[0]) || IntStream.of(this.y).noneMatch(x -> x == other.y[0]);
     }
 }

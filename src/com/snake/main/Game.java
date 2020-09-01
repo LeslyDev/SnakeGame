@@ -1,3 +1,5 @@
+package com.snake.main;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -26,7 +28,7 @@ public class Game extends JPanel implements ActionListener{
     private Timer timer = new Timer(250, this);
 
 
-    Game(){
+    public Game(){
         setBackground(Color.black);
         setLayout(null);
         initGame();

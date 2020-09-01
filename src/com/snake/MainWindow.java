@@ -1,3 +1,7 @@
+package com.snake;
+
+import com.snake.main.Game;
+
 import javax.swing.*;
 
 public class MainWindow extends JFrame {

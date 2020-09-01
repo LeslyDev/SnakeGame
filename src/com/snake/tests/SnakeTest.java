@@ -1,9 +1,10 @@
+package com.snake.tests;
+
+import com.snake.main.Snake;
 import org.junit.Assert;
 import org.junit.Test;
 
 import javax.swing.*;
-import java.awt.*;
-import java.util.Random;
 
 import static org.junit.Assert.*;
 

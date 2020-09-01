@@ -1,16 +1,18 @@
+package com.snake.main;
+
 import java.awt.*;
 import java.util.Random;
 
-class Food {
+public class Food {
     private Image m_appleImage;
     private Point appleCoordinate;
 
-    Food(Point appleCoordinate, Image image) {
+    public Food(Point appleCoordinate, Image image) {
         m_appleImage = image;
         this.appleCoordinate = appleCoordinate;
     }
 
-    Point createApple(){
+    public Point createApple(){
         int DOT_SIZE = 10;
         Point appleCoordinate;
         appleCoordinate = new Point(new Random().nextInt(33) * DOT_SIZE + 30,
@@ -18,7 +20,7 @@ class Food {
         return appleCoordinate;
     }
 
-    Point getAppleCoordinate() {
+    public Point getAppleCoordinate() {
         return appleCoordinate;
     }
 

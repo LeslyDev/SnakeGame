@@ -1,3 +1,6 @@
+package com.snake.tests;
+
+import com.snake.main.Food;
 import org.junit.Assert;
 import org.junit.Test;
 
